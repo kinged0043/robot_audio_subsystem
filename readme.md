@@ -1,0 +1,1 @@
+This is a robot audio subsystem adapted for the pi pico from the [Texas Instrument's Humanoid robotics audio subsystem reference design](https://www.ti.com/tool/TIDA-060054).
