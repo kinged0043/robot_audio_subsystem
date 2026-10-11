@@ -5089,6 +5089,17 @@
 		)
 		(uuid "28c0d8e3-29fa-4ac3-85e1-65ac0f57e25d")
 	)
+	(text "Channel B bootstrap caps (unused channel)"
+		(exclude_from_sim no)
+		(at 339.09 157.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "46010bb8-6275-4778-b18c-abd8571e36ea")
+	)
 	(text "Amp power-down pull-down"
 		(exclude_from_sim no)
 		(at 311.15 228.6 0)
@@ -5132,6 +5143,17 @@
 		)
 		(uuid "c462cc76-1a53-4efc-97c9-bd703f069f1f")
 	)
+	(text "Amp address select: 15k to DVDD = I2C 0x2D"
+		(exclude_from_sim no)
+		(at 339.09 170.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cc322241-7b44-4ac7-bdc5-f02a4fd17d1e")
+	)
 	(text "Debug header"
 		(exclude_from_sim no)
 		(at 334.01 204.47 0)
@@ -5172,12 +5194,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "15f8aa9a-5089-4d20-8ccb-e335e954aa78")
-	)
-	(junction
-		(at 224.79 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1dffa385-4c35-4596-a2a1-a7da973cf53c")
 	)
 	(junction
 		(at 175.26 115.57)
@@ -5268,6 +5284,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "56618abb-9d28-4ee8-8b2c-a049895dbb23")
+	)
+	(junction
+		(at 224.79 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5fbc4bba-ae72-4fa2-a89a-1a1ec7a88e91")
 	)
 	(junction
 		(at 254 44.45)
@@ -5408,16 +5430,16 @@
 		(uuid "d9bb8bf0-6f14-4cf2-bcf0-48e8f00dc8c4")
 	)
 	(junction
+		(at 298.45 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dbdd8002-f70c-4126-9095-0b32667b8566")
+	)
+	(junction
 		(at 31.75 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dcf4ea16-aa93-440c-b740-61b4af7f99bd")
-	)
-	(junction
-		(at 295.91 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dda06f7e-893b-49ec-9ec1-e204042ee039")
 	)
 	(junction
 		(at 200.66 115.57)
@@ -5665,6 +5687,16 @@
 	)
 	(wire
 		(pts
+			(xy 298.45 111.76) (xy 298.45 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08e686aa-77cf-410a-81ff-236ae2769063")
+	)
+	(wire
+		(pts
 			(xy 208.28 121.92) (xy 208.28 123.19)
 		)
 		(stroke
@@ -5875,16 +5907,6 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 44.45) (xy 224.79 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "232f7bcc-b63c-4efc-ae35-f4979a9ca648")
-	)
-	(wire
-		(pts
 			(xy 341.63 130.81) (xy 358.14 130.81)
 		)
 		(stroke
@@ -6045,7 +6067,7 @@
 	)
 	(wire
 		(pts
-			(xy 295.91 109.22) (xy 295.91 110.49)
+			(xy 295.91 109.22) (xy 295.91 113.03)
 		)
 		(stroke
 			(width 0)
@@ -6245,7 +6267,7 @@
 	)
 	(wire
 		(pts
-			(xy 298.45 113.03) (xy 298.45 110.49)
+			(xy 298.45 107.95) (xy 298.45 111.76)
 		)
 		(stroke
 			(width 0)
@@ -7645,6 +7667,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.79 44.45) (xy 226.06 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d34d25d4-5a0c-4252-b22b-432fe4573f04")
+	)
+	(wire
+		(pts
 			(xy 175.26 129.54) (xy 172.72 129.54)
 		)
 		(stroke
@@ -7775,6 +7807,16 @@
 	)
 	(wire
 		(pts
+			(xy 304.8 111.76) (xy 303.53 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de2d7c82-6471-4e92-b6ac-5f866bfbdc57")
+	)
+	(wire
+		(pts
 			(xy 86.36 101.6) (xy 91.44 101.6)
 		)
 		(stroke
@@ -7883,7 +7925,6 @@
 		)
 		(uuid "e9fb78ef-9d3a-4100-80e6-9f741b07528b")
 	)
-	
 	(wire
 		(pts
 			(xy 27.94 168.91) (xy 27.94 149.86)
@@ -8066,16 +8107,6 @@
 	)
 	(wire
 		(pts
-			(xy 295.91 110.49) (xy 295.91 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fee86711-14f2-4885-a1f0-bb1d690e6ea3")
-	)
-	(wire
-		(pts
 			(xy 87.63 154.94) (xy 87.63 157.48)
 		)
 		(stroke
@@ -8234,6 +8265,16 @@
 		)
 		(uuid "246969fb-834b-4a82-8efd-3fd7fe743758")
 	)
+	(label "fault"
+		(at 344.17 175.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "26afd650-2f32-4974-82f3-81f5e74b2125")
+	)
 	(label "SCL"
 		(at 312.42 68.58 180)
 		(effects
@@ -8264,6 +8305,26 @@
 		)
 		(uuid "33152105-fd7a-4a6d-846a-f7c3d2fb7ba9")
 	)
+	(label "bst_b_p"
+		(at 313.69 135.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3e5918a2-380f-46f2-9b69-eb626a4d9d11")
+	)
+	(label "bst_b_p"
+		(at 344.17 162.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "409b0495-968e-4ae4-8d0b-b7c77d3296f9")
+	)
 	(label "micbias"
 		(at 33.02 120.65 180)
 		(effects
@@ -8273,6 +8334,26 @@
 			(justify right bottom)
 		)
 		(uuid "41c4aca3-8ae4-40e8-8036-479dd85ce55d")
+	)
+	(label "out_b_p"
+		(at 349.25 162.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "44fd5580-e9a6-4074-b93a-2f48dfc10193")
+	)
+	(label "out_b_n"
+		(at 367.03 162.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4af6bb65-b3c0-436b-93b2-e77e50e5d4cd")
 	)
 	(label "micbias"
 		(at 33.02 223.52 180)
@@ -8284,6 +8365,16 @@
 		)
 		(uuid "4d645578-feb5-4c92-ad18-0ebbf83dd83a")
 	)
+	(label "VBUS"
+		(at 298.45 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4fa42475-f8d6-4452-bcd1-bcd728597abc")
+	)
 	(label "qspi_sclk"
 		(at 278.13 209.55 180)
 		(effects
@@ -8294,6 +8385,16 @@
 		)
 		(uuid "525b5f60-2cd5-4337-8525-6cb456a85290")
 	)
+	(label "avdd"
+		(at 344.17 144.78 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "547bd384-c847-40b2-8a5e-c5e78985889c")
+	)
 	(label "D-"
 		(at 147.32 166.37 180)
 		(effects
@@ -8303,6 +8404,26 @@
 			(justify right bottom)
 		)
 		(uuid "562503a6-f3bb-4fd9-a77b-4187069a524a")
+	)
+	(label "out_b_p"
+		(at 313.69 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5ed1c84a-8b1c-4618-b60f-f6455f21fc0c")
+	)
+	(label "out_b_n"
+		(at 313.69 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5f5f0996-4ebe-4537-84bc-870e1e9de67f")
 	)
 	(label "SDA"
 		(at 313.69 71.12 180)
@@ -8414,6 +8535,16 @@
 		)
 		(uuid "8b8becc5-495b-4a27-bfd4-d41380941073")
 	)
+	(label "VBUS"
+		(at 212.09 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8e5d8229-3c55-410e-9559-7fd764d4059d")
+	)
 	(label "SCL"
 		(at 215.9 156.21 0)
 		(effects
@@ -8433,6 +8564,16 @@
 			(justify right bottom)
 		)
 		(uuid "9267b769-26b7-4158-a5c4-1a26bde6d563")
+	)
+	(label "avdd"
+		(at 313.69 153.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "92b64b60-ad94-42c8-9dc5-ed9841ac328f")
 	)
 	(label "SDA"
 		(at 274.32 133.35 180)
@@ -8514,6 +8655,16 @@
 		)
 		(uuid "b6839ec7-0a33-4f3d-a2ac-e90f74c59934")
 	)
+	(label "bst_b_n"
+		(at 361.95 162.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b7589d42-3712-44ef-8a5e-773e34131899")
+	)
 	(label "D+"
 		(at 148.59 168.91 180)
 		(effects
@@ -8563,6 +8714,26 @@
 			(justify left bottom)
 		)
 		(uuid "c92ba972-93a1-46c6-841b-34e11acdd286")
+	)
+	(label "vr_dig"
+		(at 313.69 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cce6d8dd-2085-4531-834c-7551a666e1d4")
+	)
+	(label "bst_b_n"
+		(at 313.69 146.05 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cd06628e-b22f-4448-8b28-2a7051901904")
 	)
 	(label "qspi_sd2"
 		(at 278.13 217.17 180)
@@ -8653,6 +8824,16 @@
 			(justify right bottom)
 		)
 		(uuid "e981ae1f-f55b-4a6e-96b8-f764deff064e")
+	)
+	(label "vr_dig"
+		(at 354.33 144.78 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ea81eb5d-6c29-46ca-8b34-d8564dc49df8")
 	)
 	(label "micbias"
 		(at 33.02 71.12 180)
@@ -9128,6 +9309,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 346.71 162.56 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "084c63cd-e459-4b31-99bd-77d1dd10ecb9")
+		(property "Reference" "C37"
+			(at 345.44 160.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.22uF"
+			(at 345.44 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 346.71 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 346.71 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 346.71 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5a918a5b-099c-49f5-b5b9-9e0167bdf445")
+		)
+		(pin "2"
+			(uuid "2ee5562b-5e17-4e63-9320-5d7a36d55977")
+		)
+		(instances
+			(project "audio_subsystems_schematics"
+				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
+					(reference "C37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 295.91 109.22 0)
 		(unit 1)
@@ -9370,10 +9632,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0de8f4e4-1341-4078-acec-7313d4ccb80f")
 		(property "Reference" "U2"
-			(at 300.6183 110.49 0)
+			(at 298.958 130.556 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9384,7 +9645,7 @@
 			)
 		)
 		(property "Value" "TAS5805MPWP"
-			(at 300.6183 113.03 0)
+			(at 297.942 137.16 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10035,6 +10296,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 364.49 162.56 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1a3eb691-a783-4698-948b-b3b4f5343466")
+		(property "Reference" "C38"
+			(at 363.22 160.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.22uF"
+			(at 363.22 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 364.49 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 364.49 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ee6bf256-5dde-4082-8765-9c9755816830")
+		)
+		(pin "2"
+			(uuid "7a367b5c-fdb2-48b5-9403-f4ca94365ff6")
+		)
+		(instances
+			(project "audio_subsystems_schematics"
+				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
+					(reference "C38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDREF")
 		(at 87.63 125.73 0)
 		(unit 1)
@@ -10266,6 +10608,87 @@
 			(project "audio_subsystems_schematics"
 				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
 					(reference "C27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 346.71 175.26 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "24b3602d-5a07-4a2a-a4a5-680844f89d13")
+		(property "Reference" "R11"
+			(at 345.44 172.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "15k"
+			(at 345.44 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 346.71 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 346.71 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 346.71 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2c4395c6-94f6-455a-ae58-109ea136a1bb")
+		)
+		(pin "2"
+			(uuid "225ead5d-7af1-4b34-927e-e910a8e097e9")
+		)
+		(instances
+			(project "audio_subsystems_schematics"
+				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -10923,6 +11346,83 @@
 	)
 	(symbol
 		(lib_id "power:GNDREF")
+		(at 304.8 111.76 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "377a26f6-f236-49a9-ad9f-72e774d5fa22")
+		(property "Reference" "#PWR0123"
+			(at 304.8 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 304.8 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 304.8 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 304.8 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 304.8 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9ae25c67-47d7-47c3-8ff5-fe28f9894007")
+		)
+		(instances
+			(project "audio_subsystems_schematics"
+				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
+					(reference "#PWR0123")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
 		(at 187.96 227.33 0)
 		(unit 1)
 		(body_style 1)
@@ -11153,6 +11653,87 @@
 			(project "audio_subsystems_schematics"
 				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
 					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 300.99 111.76 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3f02f15e-75be-4a6a-8042-5a7b97a40fac")
+		(property "Reference" "C39"
+			(at 299.72 109.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47uF"
+			(at 302.26 109.98 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 300.99 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 300.99 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 300.99 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "041af2d4-6f24-4a7e-9b44-50dc5b4c59ec")
+		)
+		(pin "2"
+			(uuid "44288fbd-57e7-4050-aef7-c41c04030f3e")
+		)
+		(instances
+			(project "audio_subsystems_schematics"
+				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -11955,6 +12536,83 @@
 			(project "audio_subsystems_schematics"
 				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 344.17 149.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5b18c4b1-b0c7-4afa-9268-1c0b8cc1028c")
+		(property "Reference" "#PWR105"
+			(at 344.17 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 344.17 153.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 344.17 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 344.17 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 344.17 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fc3060a1-cb78-432b-ab29-846454550e91")
+		)
+		(instances
+			(project "audio_subsystems_schematics"
+				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
+					(reference "#PWR105")
 					(unit 1)
 				)
 			)
@@ -13591,6 +14249,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GNDREF")
+		(at 354.33 149.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "839a57a0-8fd9-4ac6-8277-dd44a9c5b869")
+		(property "Reference" "#PWR106"
+			(at 354.33 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 354.33 153.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 354.33 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 354.33 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 354.33 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "648a884e-795c-4562-a283-3bec8aaf69de")
+		)
+		(instances
+			(project "audio_subsystems_schematics"
+				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
+					(reference "#PWR106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 318.77 74.93 0)
 		(unit 1)
@@ -13746,6 +14481,87 @@
 			(project "audio_subsystems_schematics"
 				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
 					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 364.49 147.32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8ca072e2-2812-45c3-ba14-f23093ba9686")
+		(property "Reference" "C36"
+			(at 366.27 146.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 366.27 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 364.49 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 364.49 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "baebc519-cd37-4b65-b09c-26a4eb6322d0")
+		)
+		(pin "2"
+			(uuid "48393c68-3323-4752-a8f5-3d82dc8bc45a")
+		)
+		(instances
+			(project "audio_subsystems_schematics"
+				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -14163,6 +14979,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 364.49 144.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "97de543d-4177-4263-93e8-a0b667027bbe")
+		(property "Reference" "#PWR107"
+			(at 364.49 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 364.49 140.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 364.49 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 364.49 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a08d9273-3a3a-4c9f-beb7-f4d05c39b83d")
+		)
+		(instances
+			(project "audio_subsystems_schematics"
+				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
+					(reference "#PWR107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 346.71 41.91 0)
 		(unit 1)
@@ -14238,6 +15131,87 @@
 			(project "audio_subsystems_schematics"
 				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
 					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 354.33 147.32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9cd92f73-d48f-4c0f-8741-170e774543d5")
+		(property "Reference" "C35"
+			(at 356.11 146.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 356.11 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 354.33 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 354.33 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 354.33 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cc3cc59a-3ef7-441c-a447-49c2803eaf61")
+		)
+		(pin "2"
+			(uuid "3dfa87ef-5760-49b0-ad52-d86a89f203df")
+		)
+		(instances
+			(project "audio_subsystems_schematics"
+				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -14720,6 +15694,83 @@
 			(project "audio_subsystems_schematics"
 				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
 					(reference "MIC6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 364.49 149.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a8c45945-e53c-4160-af0e-1fdb91cf6826")
+		(property "Reference" "#PWR108"
+			(at 364.49 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 364.49 153.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 364.49 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 364.49 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 364.49 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1d4aa347-b15a-47b3-bf8b-bd909343e22b")
+		)
+		(instances
+			(project "audio_subsystems_schematics"
+				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
+					(reference "#PWR108")
 					(unit 1)
 				)
 			)
@@ -16291,6 +17342,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 344.17 147.32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c78a119a-0dcf-42aa-b292-145c1daa2856")
+		(property "Reference" "C34"
+			(at 345.95 146.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 345.95 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 344.17 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 344.17 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 344.17 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cbef6b01-26a9-40fb-ae03-94e063e06bce")
+		)
+		(pin "2"
+			(uuid "b811e791-ff30-4121-9542-3e3dd33e3eab")
+		)
+		(instances
+			(project "audio_subsystems_schematics"
+				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
+					(reference "C34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDREF")
 		(at 158.75 125.73 0)
 		(mirror y)
@@ -17351,6 +18483,83 @@
 			(project "audio_subsystems_schematics"
 				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
 					(reference "Y1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 349.25 175.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "de7e98aa-00df-4dd2-9003-bec7e2a3672b")
+		(property "Reference" "#PWR109"
+			(at 349.25 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 349.25 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 349.25 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 349.25 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 349.25 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cda7614e-270d-45e1-889e-89fc45999b4a")
+		)
+		(instances
+			(project "audio_subsystems_schematics"
+				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
+					(reference "#PWR109")
 					(unit 1)
 				)
 			)
@@ -18459,1844 +19668,6 @@
 			(project "audio_subsystems_schematics"
 				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
 					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(label "PVDD"
-		(at 298.45 110.49 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ef21ae5d-ed73-40ae-945e-16f4132f0dac")
-	)
-	(label "avdd"
-		(at 313.69 153.67 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "92b64b60-ad94-42c8-9dc5-ed9841ac328f")
-	)
-	(label "vr_dig"
-		(at 313.69 151.13 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cce6d8dd-2085-4531-834c-7551a666e1d4")
-	)
-	(label "out_b_p"
-		(at 313.69 138.43 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5ed1c84a-8b1c-4618-b60f-f6455f21fc0c")
-	)
-	(label "bst_b_p"
-		(at 313.69 135.89 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3e5918a2-380f-46f2-9b69-eb626a4d9d11")
-	)
-	(label "out_b_n"
-		(at 313.69 143.51 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5f5f0996-4ebe-4537-84bc-870e1e9de67f")
-	)
-	(label "bst_b_n"
-		(at 313.69 146.05 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cd06628e-b22f-4448-8b28-2a7051901904")
-	)
-	(label "VBUS"
-		(at 226.06 44.45 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8e5d8229-3c55-410e-9559-7fd764d4059d")
-	)
-	(text "Amp PVDD supply (from USB 5V) and decoupling"
-		(exclude_from_sim no)
-		(at 350.52 163.83 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ddfd6484-5753-44c2-bb0b-7e4a7570620a")
-	)
-	(symbol
-		(lib_id "Device:FerriteBead_Small")
-		(at 365.76 172.72 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6b3d78d4-107d-4b38-b6be-4f41e356542e")
-		(property "Reference" "FB2"
-			(at 364.49 170.18 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Ferrite bead"
-			(at 364.49 175.26 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 365.76 172.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 365.76 172.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Ferrite bead, small symbol"
-			(at 365.76 172.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "70e0d963-a46d-4590-b9d8-f1ad0ae0d90c")
-		)
-		(pin "2"
-			(uuid "bf0392cf-a6e2-409d-ad54-d73e4e81347e")
-		)
-		(instances
-			(project "audio_subsystems_schematics"
-				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
-					(reference "FB2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(label "VBUS"
-		(at 363.22 172.72 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "afc84e55-6dbb-4ec2-af8a-44182504fa30")
-	)
-	(label "PVDD"
-		(at 368.3 172.72 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6978a7c2-1aba-4c68-85d4-91987548f047")
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 355.6 185.42 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a3bd35ba-bacc-4854-abda-da8649f13112")
-		(property "Reference" "C30"
-			(at 357.38 184.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47uF"
-			(at 357.38 186.69 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 355.6 185.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 355.6 185.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 355.6 185.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "22b8aa60-1548-4cc1-9000-233b2c079b7c")
-		)
-		(pin "2"
-			(uuid "c44b4255-e51e-4c70-bd6a-8ce75a5a2628")
-		)
-		(instances
-			(project "audio_subsystems_schematics"
-				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
-					(reference "C30")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(label "PVDD"
-		(at 355.6 182.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "abbbcbb9-0bc5-44be-83ff-9216e53c500f")
-	)
-	(symbol
-		(lib_id "power:GNDREF")
-		(at 355.6 187.96 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c7e53ad9-bb9a-4206-94e1-8d149e2b4306")
-		(property "Reference" "#PWR101"
-			(at 355.6 194.31 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDREF"
-			(at 355.6 191.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 355.6 187.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 355.6 187.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 355.6 187.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "01ffd001-d82d-4ef6-9937-7133aa92b621")
-		)
-		(instances
-			(project "audio_subsystems_schematics"
-				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
-					(reference "#PWR101")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 365.76 185.42 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "51b36e51-4e57-4858-98ff-7a896ee1d816")
-		(property "Reference" "C31"
-			(at 367.54 184.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47uF"
-			(at 367.54 186.69 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 365.76 185.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 365.76 185.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 365.76 185.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "91129554-d965-49ea-9bcd-cdf059f2f769")
-		)
-		(pin "2"
-			(uuid "857d7c8a-005b-4db5-86ff-ba69c5c0a609")
-		)
-		(instances
-			(project "audio_subsystems_schematics"
-				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
-					(reference "C31")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(label "PVDD"
-		(at 365.76 182.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "80ae9438-55d4-40a3-89c8-1ad25accb58b")
-	)
-	(symbol
-		(lib_id "power:GNDREF")
-		(at 365.76 187.96 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "05fa3fd5-34a8-4313-a15a-d8b33ec75930")
-		(property "Reference" "#PWR102"
-			(at 365.76 194.31 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDREF"
-			(at 365.76 191.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 365.76 187.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 365.76 187.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 365.76 187.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1c170ebb-2a65-4feb-8746-0d2d442a2131")
-		)
-		(instances
-			(project "audio_subsystems_schematics"
-				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
-					(reference "#PWR102")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 375.92 185.42 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d0d5a85f-8e7c-434e-be53-33b850a26a78")
-		(property "Reference" "C32"
-			(at 377.7 184.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1uF"
-			(at 377.7 186.69 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 375.92 185.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 375.92 185.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 375.92 185.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e7beefcf-a152-4627-99b3-9a52af44ceeb")
-		)
-		(pin "2"
-			(uuid "cd9f928e-e119-4433-8b05-82070f15ec7e")
-		)
-		(instances
-			(project "audio_subsystems_schematics"
-				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
-					(reference "C32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(label "PVDD"
-		(at 375.92 182.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "21a1c294-0464-4a50-9c0c-336f6daba59d")
-	)
-	(symbol
-		(lib_id "power:GNDREF")
-		(at 375.92 187.96 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3667d013-5423-4fe6-bfc1-e3a18c2bec5f")
-		(property "Reference" "#PWR103"
-			(at 375.92 194.31 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDREF"
-			(at 375.92 191.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 375.92 187.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 375.92 187.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 375.92 187.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "94f4dc62-4a5c-453f-aecf-f0ee7d529f34")
-		)
-		(instances
-			(project "audio_subsystems_schematics"
-				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
-					(reference "#PWR103")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 386.08 185.42 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5f57c8f2-9527-4bbb-bfc0-99ab436db190")
-		(property "Reference" "C33"
-			(at 387.86 184.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1uF"
-			(at 387.86 186.69 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 386.08 185.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 386.08 185.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 386.08 185.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fe0a7444-b5f9-413b-a5a8-97f879b11344")
-		)
-		(pin "2"
-			(uuid "5c71a2d3-be74-44a6-8351-96d14ed42893")
-		)
-		(instances
-			(project "audio_subsystems_schematics"
-				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
-					(reference "C33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(label "PVDD"
-		(at 386.08 182.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ac427e63-d1fc-44bf-afca-754221d11821")
-	)
-	(symbol
-		(lib_id "power:GNDREF")
-		(at 386.08 187.96 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c836a765-e1fa-4df0-bbad-3f938ffe5de6")
-		(property "Reference" "#PWR104"
-			(at 386.08 194.31 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDREF"
-			(at 386.08 191.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 386.08 187.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 386.08 187.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 386.08 187.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e0103c86-f513-432d-9c82-50558eec17b2")
-		)
-		(instances
-			(project "audio_subsystems_schematics"
-				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
-					(reference "#PWR104")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(text "Amp regulator and digital supply caps"
-		(exclude_from_sim no)
-		(at 350.52 193.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2404594a-3a66-436c-8595-e1dfca61f5eb")
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 355.6 200.66 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c78a119a-0dcf-42aa-b292-145c1daa2856")
-		(property "Reference" "C34"
-			(at 357.38 199.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1uF"
-			(at 357.38 201.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 355.6 200.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 355.6 200.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 355.6 200.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cbef6b01-26a9-40fb-ae03-94e063e06bce")
-		)
-		(pin "2"
-			(uuid "b811e791-ff30-4121-9542-3e3dd33e3eab")
-		)
-		(instances
-			(project "audio_subsystems_schematics"
-				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
-					(reference "C34")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(label "avdd"
-		(at 355.6 198.12 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "547bd384-c847-40b2-8a5e-c5e78985889c")
-	)
-	(symbol
-		(lib_id "power:GNDREF")
-		(at 355.6 203.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5b18c4b1-b0c7-4afa-9268-1c0b8cc1028c")
-		(property "Reference" "#PWR105"
-			(at 355.6 209.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDREF"
-			(at 355.6 207.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 355.6 203.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 355.6 203.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 355.6 203.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fc3060a1-cb78-432b-ab29-846454550e91")
-		)
-		(instances
-			(project "audio_subsystems_schematics"
-				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
-					(reference "#PWR105")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 365.76 200.66 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9cd92f73-d48f-4c0f-8741-170e774543d5")
-		(property "Reference" "C35"
-			(at 367.54 199.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1uF"
-			(at 367.54 201.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 365.76 200.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 365.76 200.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 365.76 200.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cc3cc59a-3ef7-441c-a447-49c2803eaf61")
-		)
-		(pin "2"
-			(uuid "3dfa87ef-5760-49b0-ad52-d86a89f203df")
-		)
-		(instances
-			(project "audio_subsystems_schematics"
-				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
-					(reference "C35")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(label "vr_dig"
-		(at 365.76 198.12 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ea81eb5d-6c29-46ca-8b34-d8564dc49df8")
-	)
-	(symbol
-		(lib_id "power:GNDREF")
-		(at 365.76 203.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "839a57a0-8fd9-4ac6-8277-dd44a9c5b869")
-		(property "Reference" "#PWR106"
-			(at 365.76 209.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDREF"
-			(at 365.76 207.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 365.76 203.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 365.76 203.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 365.76 203.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "648a884e-795c-4562-a283-3bec8aaf69de")
-		)
-		(instances
-			(project "audio_subsystems_schematics"
-				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
-					(reference "#PWR106")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 375.92 200.66 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8ca072e2-2812-45c3-ba14-f23093ba9686")
-		(property "Reference" "C36"
-			(at 377.7 199.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 377.7 201.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 375.92 200.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 375.92 200.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 375.92 200.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "baebc519-cd37-4b65-b09c-26a4eb6322d0")
-		)
-		(pin "2"
-			(uuid "48393c68-3323-4752-a8f5-3d82dc8bc45a")
-		)
-		(instances
-			(project "audio_subsystems_schematics"
-				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
-					(reference "C36")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 375.92 198.12 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "97de543d-4177-4263-93e8-a0b667027bbe")
-		(property "Reference" "#PWR107"
-			(at 375.92 201.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 375.92 194.31 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 375.92 198.12 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 375.92 198.12 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 375.92 198.12 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a08d9273-3a3a-4c9f-beb7-f4d05c39b83d")
-		)
-		(instances
-			(project "audio_subsystems_schematics"
-				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
-					(reference "#PWR107")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDREF")
-		(at 375.92 203.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a8c45945-e53c-4160-af0e-1fdb91cf6826")
-		(property "Reference" "#PWR108"
-			(at 375.92 209.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDREF"
-			(at 375.92 207.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 375.92 203.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 375.92 203.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 375.92 203.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1d4aa347-b15a-47b3-bf8b-bd909343e22b")
-		)
-		(instances
-			(project "audio_subsystems_schematics"
-				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
-					(reference "#PWR108")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(text "Channel B bootstrap caps (unused channel)"
-		(exclude_from_sim no)
-		(at 350.52 210.82 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "46010bb8-6275-4778-b18c-abd8571e36ea")
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 358.14 215.9 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "084c63cd-e459-4b31-99bd-77d1dd10ecb9")
-		(property "Reference" "C37"
-			(at 356.87 213.36 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.22uF"
-			(at 356.87 218.44 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 358.14 215.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 358.14 215.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 358.14 215.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5a918a5b-099c-49f5-b5b9-9e0167bdf445")
-		)
-		(pin "2"
-			(uuid "2ee5562b-5e17-4e63-9320-5d7a36d55977")
-		)
-		(instances
-			(project "audio_subsystems_schematics"
-				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
-					(reference "C37")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(label "bst_b_p"
-		(at 355.6 215.9 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "409b0495-968e-4ae4-8d0b-b7c77d3296f9")
-	)
-	(label "out_b_p"
-		(at 360.68 215.9 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "44fd5580-e9a6-4074-b93a-2f48dfc10193")
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 375.92 215.9 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1a3eb691-a783-4698-948b-b3b4f5343466")
-		(property "Reference" "C38"
-			(at 374.65 213.36 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.22uF"
-			(at 374.65 218.44 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 375.92 215.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 375.92 215.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 375.92 215.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ee6bf256-5dde-4082-8765-9c9755816830")
-		)
-		(pin "2"
-			(uuid "7a367b5c-fdb2-48b5-9403-f4ca94365ff6")
-		)
-		(instances
-			(project "audio_subsystems_schematics"
-				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
-					(reference "C38")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(label "bst_b_n"
-		(at 373.38 215.9 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b7589d42-3712-44ef-8a5e-773e34131899")
-	)
-	(label "out_b_n"
-		(at 378.46 215.9 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4af6bb65-b3c0-436b-93b2-e77e50e5d4cd")
-	)
-	(text "Amp address select: 15k to DVDD = I2C 0x2D"
-		(exclude_from_sim no)
-		(at 350.52 223.52 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cc322241-7b44-4ac7-bdc5-f02a4fd17d1e")
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 358.14 228.6 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "24b3602d-5a07-4a2a-a4a5-680844f89d13")
-		(property "Reference" "R11"
-			(at 356.87 226.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "15k"
-			(at 356.87 231.14 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 358.14 228.6 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 358.14 228.6 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 358.14 228.6 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2c4395c6-94f6-455a-ae58-109ea136a1bb")
-		)
-		(pin "2"
-			(uuid "225ead5d-7af1-4b34-927e-e910a8e097e9")
-		)
-		(instances
-			(project "audio_subsystems_schematics"
-				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
-					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(label "fault"
-		(at 355.6 228.6 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "26afd650-2f32-4974-82f3-81f5e74b2125")
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 360.68 228.6 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "de7e98aa-00df-4dd2-9003-bec7e2a3672b")
-		(property "Reference" "#PWR109"
-			(at 360.68 232.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 360.68 224.79 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 360.68 228.6 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 360.68 228.6 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 360.68 228.6 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cda7614e-270d-45e1-889e-89fc45999b4a")
-		)
-		(instances
-			(project "audio_subsystems_schematics"
-				(path "/5b39e93a-b48a-479c-9aa0-a5c73005d3c4"
-					(reference "#PWR109")
 					(unit 1)
 				)
 			)

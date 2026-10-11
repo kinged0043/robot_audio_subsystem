@@ -59,3 +59,7 @@ dkms.conf
 
 # CMake build output
 build/
+
+# KiCad lock and autosave files
+~*.lck
+_autosave-*
