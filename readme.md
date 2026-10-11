@@ -71,14 +71,14 @@ The board shows up on a computer as a USB audio device (UAC2, 48 kHz, 16-bit) wi
 
 | File | What it does |
 |---|---|
-| `board_pins.h` | Pin map and options (which 4 mics, mic gain, mono speaker mix) |
-| `pdm_mics.pio`, `pdm_mics.c` | PDM clock, capture and decimation filter |
-| `i2s_out.pio`, `i2s_out.c` | I²S output to the amp |
-| `tas5805m.c` | Amp start-up, volume and fault handling |
-| `usb_descriptors.c`, `tusb_config.h` | USB audio device descriptors |
-| `robot_audio_subsystem.c` | Main loop and USB audio requests |
+| `headers/board_pins.h` | Pin map and options (which 4 mics, mic gain, mono speaker mix) |
+| `pdm_mics.pio`, `src/pdm_mics.c` | PDM clock, capture and decimation filter |
+| `i2s_out.pio`, `src/i2s_out.c` | I²S output to the amp |
+| `src/tas5805m.c` | Amp start-up, volume and fault handling |
+| `src/usb_descriptors.c`, `headers/tusb_config.h` | USB audio device descriptors |
+| `src/robot_audio_subsystem.c` | Main loop and USB audio requests |
 
-To use MIC2, MIC4, MIC6 and MIC8 instead, set `MIC_USE_SELECT_GND` to 0 in `board_pins.h`. If the host hears the wrong mic of each pair, flip `PDM_SELECT_GND_DRIVES_CLOCK_LOW`.
+To use MIC2, MIC4, MIC6 and MIC8 instead, set `MIC_USE_SELECT_GND` to 0 in `headers/board_pins.h`. If the host hears the wrong mic of each pair, flip `PDM_SELECT_GND_DRIVES_CLOCK_LOW`.
 
 ## Known limits
 

@@ -36,11 +36,11 @@ pico_sdk_init()
 # Add executable. Default name is the project name, version 0.1
 
 add_executable(robot_audio_subsystem
-        robot_audio_subsystem.c
-        pdm_mics.c
-        i2s_out.c
-        tas5805m.c
-        usb_descriptors.c
+        src/robot_audio_subsystem.c
+        src/pdm_mics.c
+        src/i2s_out.c
+        src/tas5805m.c
+        src/usb_descriptors.c
         )
 
 pico_generate_pio_header(robot_audio_subsystem ${CMAKE_CURRENT_LIST_DIR}/pdm_mics.pio)
@@ -71,7 +71,7 @@ target_link_libraries(robot_audio_subsystem
 
 # Add the standard include files to the build
 target_include_directories(robot_audio_subsystem PRIVATE
-        ${CMAKE_CURRENT_LIST_DIR}
+        ${CMAKE_CURRENT_LIST_DIR}/headers
 )
 
 pico_add_extra_outputs(robot_audio_subsystem)
