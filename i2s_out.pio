@@ -1,0 +1,48 @@
+; I2S transmitter, 32-bit slots, 64 bit clocks per frame.
+; Side-set bit 0 = BCLK, bit 1 = LRCLK, so LRCLK must be the pin after BCLK.
+; Data changes on the BCLK falling edge and is sampled on the rising edge.
+; The last bit of each word goes out after LRCLK changes, which gives the
+; one-bit delay the I2S format needs.
+;
+; The program starts at entry_point, so the first word pulled is the left
+; channel (LRCLK low).
+
+.program i2s_out
+.side_set 2
+
+;                       /--- LRCLK
+;                       |/-- BCLK
+bitloop1:              ;||
+    out pins, 1        side 0b10
+    jmp x-- bitloop1   side 0b11
+    out pins, 1        side 0b00
+public entry_point:
+    set x, 30          side 0b01
+
+bitloop0:
+    out pins, 1        side 0b00
+    jmp x-- bitloop0   side 0b01
+    out pins, 1        side 0b10
+    set x, 30          side 0b11
+
+% c-sdk {
+static inline void i2s_out_program_init(PIO pio, uint sm, uint offset,
+                                        uint data_pin, uint clock_pin_base,
+                                        float clk_div) {
+    pio_sm_config c = i2s_out_program_get_default_config(offset);
+
+    sm_config_set_out_pins(&c, data_pin, 1);
+    sm_config_set_sideset_pins(&c, clock_pin_base);
+    sm_config_set_out_shift(&c, false, true, 32);  // MSB first, autopull 32
+    sm_config_set_fifo_join(&c, PIO_FIFO_JOIN_TX);
+    sm_config_set_clkdiv(&c, clk_div);
+
+    pio_gpio_init(pio, data_pin);
+    pio_gpio_init(pio, clock_pin_base);
+    pio_gpio_init(pio, clock_pin_base + 1);
+    pio_sm_set_consecutive_pindirs(pio, sm, data_pin, 1, true);
+    pio_sm_set_consecutive_pindirs(pio, sm, clock_pin_base, 2, true);
+
+    pio_sm_init(pio, sm, offset + i2s_out_offset_entry_point, &c);
+}
+%}

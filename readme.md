@@ -2,7 +2,7 @@
 
 An 8-microphone input and stereo speaker output for a robot, built around the Raspberry Pi RP2040. It is adapted from Texas Instruments' [Humanoid robotics audio subsystem reference design (TIDA-060054)](https://www.ti.com/tool/TIDA-060054).
 
-**Status:** schematic in progress (see [To do](#to-do)). No PCB or firmware yet.
+**Status:** schematic in progress (see [To do](#to-do)). First firmware written, not yet tested on hardware. No PCB yet.
 
 ## What it does
 
@@ -59,15 +59,26 @@ The four data pins must stay consecutive, because the PIO program reads them as 
 - The bare RP2040 chip needs a 12 MHz crystal, QSPI flash, a reset line, and decoupling on every supply pin before it will boot.
 - The amp's own supply and bootstrap parts come from the TAS5805M datasheet's typical application.
 
-## How the audio path will work
+## Firmware
 
-1. The RP2040 drives the PDM clock (about 3.072 MHz, which is 64 times 48 kHz).
-2. A PIO program samples all 4 data lines on both clock edges. That gives 8 mic streams.
-3. DMA moves the raw bits into memory.
-4. Software filters each stream (CIC decimation, then a short FIR) down to 48 kHz audio.
-5. The audio goes out over USB, or over I²S to the amp for playback.
+The board shows up on a computer as a USB audio device (UAC2, 48 kHz, 16-bit) with a 4-channel microphone and a stereo speaker. No driver is needed on Linux, macOS or Windows 10+.
 
-For an exact 48 kHz rate, set the system clock to 153.6 MHz so the PIO divider is a whole number.
+1. The system clock runs at 153.6 MHz, so the PDM and I²S clocks divide out exactly to 48 kHz.
+2. A PIO program drives the 3.072 MHz PDM clock and samples all 4 data lines on both clock halves.
+3. DMA moves the raw bits into memory, 1 ms at a time.
+4. Core 1 keeps one mic per data line (MIC1, MIC3, MIC5, MIC7) and ignores the other 4. It filters each stream with a 4th-order sinc (CIC) filter down to 48 kHz. This uses about half of core 1.
+5. Core 0 sends the mic audio over USB. It also receives speaker audio from USB and plays it over I²S to the TAS5805M, and it controls the amp over I²C.
+
+| File | What it does |
+|---|---|
+| `board_pins.h` | Pin map and options (which 4 mics, mic gain, mono speaker mix) |
+| `pdm_mics.pio`, `pdm_mics.c` | PDM clock, capture and decimation filter |
+| `i2s_out.pio`, `i2s_out.c` | I²S output to the amp |
+| `tas5805m.c` | Amp start-up, volume and fault handling |
+| `usb_descriptors.c`, `tusb_config.h` | USB audio device descriptors |
+| `robot_audio_subsystem.c` | Main loop and USB audio requests |
+
+To use MIC2, MIC4, MIC6 and MIC8 instead, set `MIC_USE_SELECT_GND` to 0 in `board_pins.h`. If the host hears the wrong mic of each pair, flip `PDM_SELECT_GND_DRIVES_CLOCK_LOW`.
 
 ## Known limits
 
@@ -87,7 +98,8 @@ For an exact 48 kHz rate, set the system clock to 153.6 MHz so the PIO divider i
 - [ ] Add QSPI flash, reset and SWD, crystal series resistor, USB connector and resistors
 - [ ] Add a power section (USB 5 V to 3.3 V regulator, amp supply)
 - [ ] Add decoupling on every 3.3 V pin, and set a real value on every cap and resistor
-- [ ] Write the PIO program, DMA setup and filter
+- [x] Write the PIO program, DMA setup and filter
+- [ ] Test the firmware on hardware
 - [ ] Lay out the PCB
 
 ## Credits

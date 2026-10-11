@@ -35,7 +35,22 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(robot_audio_subsystem robot_audio_subsystem.c )
+add_executable(robot_audio_subsystem
+        robot_audio_subsystem.c
+        pdm_mics.c
+        i2s_out.c
+        tas5805m.c
+        usb_descriptors.c
+        )
+
+pico_generate_pio_header(robot_audio_subsystem ${CMAKE_CURRENT_LIST_DIR}/pdm_mics.pio)
+pico_generate_pio_header(robot_audio_subsystem ${CMAKE_CURRENT_LIST_DIR}/i2s_out.pio)
+
+# Custom board: give the 12 MHz crystal (Y1) extra start-up time, as the
+# RP2040 hardware design guide recommends for boards other than the Pico.
+target_compile_definitions(robot_audio_subsystem PRIVATE
+        PICO_XOSC_STARTUP_DELAY_MULTIPLIER=64
+        )
 
 pico_set_program_name(robot_audio_subsystem "robot_audio_subsystem")
 pico_set_program_version(robot_audio_subsystem "0.1")
@@ -46,7 +61,13 @@ pico_enable_stdio_usb(robot_audio_subsystem 0)
 
 # Add the standard library to the build
 target_link_libraries(robot_audio_subsystem
-        pico_stdlib)
+        pico_stdlib
+        pico_multicore
+        pico_unique_id
+        hardware_pio
+        hardware_dma
+        hardware_i2c
+        tinyusb_device)
 
 # Add the standard include files to the build
 target_include_directories(robot_audio_subsystem PRIVATE

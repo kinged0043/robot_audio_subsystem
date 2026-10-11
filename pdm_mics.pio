@@ -1,0 +1,46 @@
+; Drives the shared PDM clock and samples all 4 PDM data lines on both
+; halves of each clock period, giving 8 mic bits per clock.
+;
+; One clock period is 10 PIO cycles. Each half waits 4 cycles, then samples
+; just before the clock edge, while the mic that owns that half is still
+; driving the line.
+;
+; ISR shifts left with autopush at 32 bits, so each pushed word holds 4 clock
+; periods. Each byte is one clock period, the most significant byte first:
+;   bits 7..4 = data lines 4..1 sampled at the end of the clock-low half
+;   bits 3..0 = data lines 4..1 sampled at the end of the clock-high half
+
+.program pdm_quad
+.side_set 1
+
+.wrap_target
+    nop         side 0 [3]
+    in pins, 4  side 0
+    nop         side 1 [3]
+    in pins, 4  side 1
+.wrap
+
+% c-sdk {
+#include "hardware/clocks.h"
+
+static inline void pdm_quad_program_init(PIO pio, uint sm, uint offset,
+                                         uint clk_pin, uint data_base,
+                                         float clk_div) {
+    pio_sm_config c = pdm_quad_program_get_default_config(offset);
+
+    sm_config_set_sideset_pins(&c, clk_pin);
+    sm_config_set_in_pins(&c, data_base);
+    sm_config_set_in_shift(&c, false, true, 32);   // shift left, autopush 32
+    sm_config_set_fifo_join(&c, PIO_FIFO_JOIN_RX);
+    sm_config_set_clkdiv(&c, clk_div);
+
+    pio_gpio_init(pio, clk_pin);
+    pio_sm_set_consecutive_pindirs(pio, sm, clk_pin, 1, true);
+    for (uint i = 0; i < 4; i++) {
+        pio_gpio_init(pio, data_base + i);
+    }
+    pio_sm_set_consecutive_pindirs(pio, sm, data_base, 4, false);
+
+    pio_sm_init(pio, sm, offset, &c);
+}
+%}
